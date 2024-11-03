@@ -1,0 +1,5 @@
+You have a player that can move on a grid. Each cell in the grid has some specific effect, but you don't know which is which until you step over them. Some of them will take you back to the beginning, while others will reveal other effects in the surrounding areas.
+
+Your purpose is to reach the end of the grid, where a treasure chest awaits, and in order to reach that place, you have to take a specific path.
+
+If you didn't like the effect from the cells, you can undo & redo your actions and also of the effects.
