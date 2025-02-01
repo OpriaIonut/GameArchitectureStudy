@@ -12,7 +12,8 @@ namespace DesignPatterns.Command
         Teleport,
         InvertCamera,
         HidePlatforms,
-        RevealPlatforms
+        RevealPlatforms,
+        Count
     }
 
     public abstract class BasePlatformEffect

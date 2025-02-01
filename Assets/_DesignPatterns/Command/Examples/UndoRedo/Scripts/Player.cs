@@ -10,6 +10,11 @@ namespace DesignPatterns.Command
 
         private float health;
 
+        private void Awake()
+        {
+            Locator.RegisterService(this);
+        }
+
         private void Start()
         {
             health = maxHealth;
@@ -23,6 +28,11 @@ namespace DesignPatterns.Command
         public void TakeDamage(float ammount)
         {
             health = Mathf.Clamp(health - ammount, 0.0f, maxHealth);
+        }
+
+        public void MoveToLocation(Vector3 location)
+        {
+            transform.position = location;
         }
     }
 }
