@@ -23,7 +23,7 @@ namespace DesignPatterns.Command
         {
             switch (type)
             {
-                case PlatformEffectType.None: return Color.black;
+                case PlatformEffectType.None: return Color.white;
                 case PlatformEffectType.Heal: return Color.green;
                 case PlatformEffectType.Damage: return Color.red;
                 case PlatformEffectType.Teleport: return Color.blue;
@@ -31,7 +31,7 @@ namespace DesignPatterns.Command
                 case PlatformEffectType.HidePlatforms: return Color.yellow;
                 case PlatformEffectType.RevealPlatforms: return Color.cyan;
                 default:
-                    return Color.white;
+                    return Color.black;
             }
         }
     }
