@@ -6,6 +6,8 @@ namespace DesignPatterns.Command
 {
     public class DamageEffect : BasePlatformEffect
     {
+        public override bool IsValid() { return true; }
+
         public override void Execute()
         {
             Player player = Locator.GetService<Player>();

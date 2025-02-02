@@ -1,0 +1,9 @@
+Arhitecture is hard =)))
+
+Kind of understand how this pattern works. I think the movement command pattern is much better implemented than the platform effect one. That one can produce bugs if you undo & redo. To make a proper undo & redo over 2 different command types The stack should be implemented at a higher level, and keep both the movement and effect as a single action, with the effect being optional (if it cannot be applied for certain reasons, like your health is full).
+
+This pattern can be useful, it simplified the player class a lot. The consumers of the commands end up being just like bots that receive instructions, and this can make it easier to decouple things or implement other systems on top of it (other systems will just use their function, without the player having to know about the existance of other systems).
+
+I didn't implement decoupling well in this example, because the player class needs to know about the existance of the PlatformSpawner to move, and I think this pattern also makes the code more complex, thus breaking the rule of "limit the amount of code you need to load into your brain to solve a problem".
+
+This was a good exercise, but a bit too complex for start. The code was too big, should have implemented just a simple mechanic with a single command pattern, and not 2 patterns interconnected.

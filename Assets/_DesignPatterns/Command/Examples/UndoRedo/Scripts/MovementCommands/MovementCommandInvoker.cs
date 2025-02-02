@@ -8,9 +8,16 @@ namespace DesignPatterns.Command
         private Stack<IPlayerCommand> undoStack = new Stack<IPlayerCommand>();
         private Stack<IPlayerCommand> redoStack = new Stack<IPlayerCommand>();
 
-        private void Start()
+        private void Awake()
         {
             Locator.RegisterService(this);
+        }
+
+        private void Start()
+        {
+            InputHandler input = Locator.GetService<InputHandler>();
+            input.AddListener_undoBtnPress(Undo);
+            input.AddListener_redoBtnPress(Redo);
         }
 
         public void ExecuteCommand(IPlayerCommand command)

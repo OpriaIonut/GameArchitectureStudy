@@ -26,6 +26,8 @@ namespace DesignPatterns.Command
         public void Execute()
         {
             player.Move(direction);
+            player.CurrentPlatform.RevealColor();
+            player.CurrentPlatform.ApplyEffect();
         }
 
         public void Undo()
@@ -39,6 +41,9 @@ namespace DesignPatterns.Command
                 oppositeDir = MoveDirection.Left;
             else
                 oppositeDir = MoveDirection.Up;
+
+            player.CurrentPlatform.SetHiddenColor();
+            player.CurrentPlatform.UndoEffect();
 
             player.Move(oppositeDir);
         }

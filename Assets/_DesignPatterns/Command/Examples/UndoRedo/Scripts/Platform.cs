@@ -43,12 +43,14 @@ namespace DesignPatterns.Command
 
         public void ApplyEffect()
         {
-            effect.Execute();
+            if (effect != null)
+                effect.Execute();
         }
 
         public void UndoEffect()
         {
-            effect.Execute();
+            if (effect != null)
+                effect.Undo();
         }
     }
 }

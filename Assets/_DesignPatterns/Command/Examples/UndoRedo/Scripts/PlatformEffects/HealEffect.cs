@@ -6,15 +6,25 @@ namespace DesignPatterns.Command
 {
     public class HealEffect : BasePlatformEffect
     {
+        private Player player;
+
+        public HealEffect(Player player)
+        {
+            this.player = player;
+        }
+
+        public override bool IsValid()
+        {
+            return player.CurrentHealth < player.MaxHealth;
+        }
+
         public override void Execute()
         {
-            Player player = Locator.GetService<Player>();
             player.Heal(10);
         }
 
         public override void Undo()
         {
-            Player player = Locator.GetService<Player>();
             player.TakeDamage(10);
         }
     }
