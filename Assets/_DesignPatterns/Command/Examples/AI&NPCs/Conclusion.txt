@@ -1,0 +1,7 @@
+This example went much smoother than the UndoRedo example, and I think it's a much better demonstration how how this pattern should work.
+
+I was able to create and separate commands for the NPC to take, and be able to queue them so that it follows a specific logic. The NPC notifies the dispatcher once it finishes a task, so that the dispatcher can decide what to make him do next.
+
+We can easily extend this system in the future with other commands, and even more NPCs, with only a small modification in the dispatcher logic.
+
+I think this command is very useful for chaining commands, and even for separating certain parts of the code (whatever script wants to make an npc do something, they need access just to the dispatcher, and not the specific npc).

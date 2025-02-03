@@ -1,1 +1,4 @@
-Make an NPC that has a queue of commands (patrols certain zones, stops in a specific place for a couple of seconds, etc.). When the player gets close to him, it adds a new priority command to chase the player, and if he loses the player, he returns to it's queue of commands.
+Make an NPC that has a queue of commands (patrols certain zones, inspects certain areas, etc.)
+There are a couple of locations that the enemy will stop to investigate, represented by some cubes (imagine them as treasure chests).
+Within the cubes, there are a couple that hold treasure. When the enemy finds treasure cubes, he colors them a different color.
+The user can click on the cubes and make the npc move towards them. Once the NPC reaches them, he starts investigating.
