@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace DesignPatterns.Command
+namespace DesignPatterns.Command.UndoRedo
 {
     public class UIColorItem : MonoBehaviour
     {

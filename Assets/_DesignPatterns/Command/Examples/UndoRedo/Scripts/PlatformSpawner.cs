@@ -1,8 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DesignPatterns.Command
+namespace DesignPatterns.Command.UndoRedo
 {
     public class PlatformSpawner : MonoBehaviour
     {

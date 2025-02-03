@@ -1,0 +1,6 @@
+Make a map that has multiple items spawned randomly.
+When you get close to an item, if you press a key, you will collect it and it will get added to the inventory (it will stack the items)
+In the inventory you can select an item and can do the following actions:
+	-split stack -> take one item from the stack (option doesn't appear if it is a single item)
+	-use -> uses the item (don't really care what it does, some simple logs are enough)
+	-drop -> discard the item and put it back on the map at the player's position)

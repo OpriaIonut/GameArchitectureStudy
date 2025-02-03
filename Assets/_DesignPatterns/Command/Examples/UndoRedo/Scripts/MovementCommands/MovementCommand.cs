@@ -1,6 +1,4 @@
-using UnityEngine;
-
-namespace DesignPatterns.Command
+namespace DesignPatterns.Command.UndoRedo
 {
     public enum MoveDirection
     {

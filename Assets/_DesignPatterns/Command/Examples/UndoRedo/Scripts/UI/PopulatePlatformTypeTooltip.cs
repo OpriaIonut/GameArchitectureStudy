@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace DesignPatterns.Command
+namespace DesignPatterns.Command.UndoRedo
 {
     public class PopulatePlatformTypeTooltip : MonoBehaviour
     {

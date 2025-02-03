@@ -1,0 +1,1 @@
+Make an NPC that has a queue of commands (patrols certain zones, stops in a specific place for a couple of seconds, etc.). When the player gets close to him, it adds a new priority command to chase the player, and if he loses the player, he returns to it's queue of commands.

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace DesignPatterns.Command
+namespace DesignPatterns.Command.UndoRedo
 {
     public class InputHandler : MonoBehaviour
     {

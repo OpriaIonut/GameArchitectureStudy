@@ -1,4 +1,4 @@
-namespace DesignPatterns.Command
+namespace DesignPatterns.Command.UndoRedo
 {
     public interface IPlayerCommand
     {
