@@ -1,0 +1,2 @@
+Make a platformer in which you can move the player, make him jump, dash, crouch, double jump using the state pattern.
+Each action or control behavior of the character should be a state, that controls it's own input handling and behavior.

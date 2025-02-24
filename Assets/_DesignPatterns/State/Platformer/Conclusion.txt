@@ -1,0 +1,7 @@
+It is an interesting way of programming, encapsulate into states the specific behavior of characters and change between them based on desired logic.
+
+There are some issues to be faced that coul dmake this pattern counter-productive. For example, to add jumping, I had to modify both Idle and Moving states to add them knowledge for "is the player grounded", in order to transition to the Jumping state. For what it's fair, I only had to change the states that could trigger the Jumping state, but it still breaks the Open-Closed Principle.
+
+It's also tricky to use if you want to add competing states (ex: dash-attack combo, or jumping-kick combo).
+
+Honestly I don't see that many uses for this pattern, outside of node-based systems and AI.
